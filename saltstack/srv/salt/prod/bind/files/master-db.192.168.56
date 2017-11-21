@@ -1,0 +1,21 @@
+$TTL    604800
+@       IN      SOA     calfdata.com. admin.calfdata.com. (
+                              7         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+; name servers
+      IN      NS      ns1.calfdata.com.
+      IN      NS      ns2.calfdata.com.
+
+
+; PTR Records
+100.56.168   IN      PTR     ns1.calfdata.com.      ; 192.168.56.100
+101.56.168   IN      PTR     ns2.calfdata.com.      ; 192.168.56.101
+
+201.56.168   IN      PTR     vm1.calfdata.com.      ; 192.168.56.201
+202.56.168   IN      PTR     vm2.calfdata.com.      ; 192.168.56.202
+203.56.168   IN      PTR     vm3.calfdata.com.      ; 192.168.56.203
+204.56.168   IN      PTR     test.calfdata.com.     ; 192.168.56.204
+205.56.168   IN      PTR     ai.calfdata.com.       ; 192.168.56.205

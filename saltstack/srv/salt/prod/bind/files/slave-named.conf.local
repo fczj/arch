@@ -1,0 +1,11 @@
+zone "calfdata.com" {
+    type slave;
+    file "slaves/db.calfdata.com"; 		# zone file path
+    masters  { 192.168.56.100; };         # ns2 private IP address - secondary
+};
+
+zone "56.168.192.in-addr.arpa" {
+    type slave;
+    file "slaves/db.192.168.56"; 		# zone file path
+    masters  { 192.168.56.100; };         # ns2 private IP address - secondary
+};
