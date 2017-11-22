@@ -1,0 +1,11 @@
+zone "calfdata.com" {
+    type master;
+    file "/etc/bind/zones/db.calfdata.com"; 	# zone file path
+    allow-transfer { 192.168.56.101; };         # ns2 private IP address - secondary
+};
+
+zone "56.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.192.168.56";
+    allow-transfer { 192.168.56.101; };
+};
